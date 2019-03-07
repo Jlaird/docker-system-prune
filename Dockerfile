@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN  apk add --update bash && rm -rf /var/cache/apk/*
+RUN  apk add --update bash docker && rm -rf /var/cache/apk/*
 
 ENV DELAY=3600
 
