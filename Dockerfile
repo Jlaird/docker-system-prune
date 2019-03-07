@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+ENV DELAY=3600
+
+ADD startup.sh /startup.sh
+RUN chmod 755 /startup.sh
+ENTRYPOINT ["/startup.sh"]
